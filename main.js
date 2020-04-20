@@ -22,18 +22,32 @@ console.log(eta);
 
 // creare un if che applica la scontistica col sottocento
 
-if (eta > 18 && eta < 65) {
-    var costo_finale = (costo_km * km);
+// if (eta > 18 && eta < 65) {
+//     var costo_finale = (costo_km * km);
+//     document.getElementById('costo_da_mostrare').innerHTML = costo_finale + valuta;
+// }
+// else {
+//     if (eta <18) {
+//         var costo_finale = ((80 * (costo_km * km)) / 100);
+//         document.getElementById('costo_da_mostrare').innerHTML = costo_finale + valuta;
+//     }
+//     else {
+//         var costo_finale = ((60 * (costo_km * km)) / 100);
+//         document.getElementById('costo_da_mostrare').innerHTML = costo_finale + valuta;
+//     }
+// }
+// console.log(costo_finale);
+
+if (eta < 18 ) {
+    var costo_finale = ((80 * (costo_km * km)) / 100);
+    document.getElementById('costo_da_mostrare').innerHTML = costo_finale + valuta;
+}
+else if (eta > 65) {
+    var costo_finale = ((60 * (costo_km * km)) / 100);
     document.getElementById('costo_da_mostrare').innerHTML = costo_finale + valuta;
 }
 else {
-    if (eta <18) {
-        var costo_finale = ((80 * (costo_km * km)) / 100);
-        document.getElementById('costo_da_mostrare').innerHTML = costo_finale + valuta;
-    }
-    else {
-        var costo_finale = ((60 * (costo_km * km)) / 100);
-        document.getElementById('costo_da_mostrare').innerHTML = costo_finale + valuta;
-    }
+    var costo_finale = (costo_km * km);
+    document.getElementById('costo_da_mostrare').innerHTML = costo_finale + valuta;
 }
 console.log(costo_finale);
