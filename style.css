@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body     {
+    font-family: 'Oswald', sans-serif;
+}
+
+.costo_treno    {
+    border: 2px solid #00bda5;
+    padding: 15px;
+    margin: 50px 200px;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00bda5;
+}
+
+h1     {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ff0015;
+}
+
+span    {
+    color: #ffbb00;
+}
+
+
+.costo_treno p:last-child,
+#password
+   {
+    font-size: 18px;
+    color: red;
+    font-weight: 600;
+}
